@@ -7,22 +7,16 @@
 </head>
 <body>
     <script>
-        function greet(name) {
-            let result = "";
-
-            if (name === "Craig") {
-               result = "Hi Craig!";
-            } else if (name === "Tyler") {
-                result = "Tyler, is that you?";
-            } else {
-                result = "Wait, where's Craig!";
+        let person = {
+            firstName: "Craig",
+            lastName: "Shoemaker",
+            twitter: "@craigshoemaker",
+            greet: function(){
+                console.log("My name is " + this.firstName);
             }
+        };
 
-            return result;
-        }
-
-        let message = greet("Tyler");
-        console.log(message);
+        person.greet();
     </script>
 </body>
 </html>
