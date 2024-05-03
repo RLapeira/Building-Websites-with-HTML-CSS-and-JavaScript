@@ -8,16 +8,21 @@
 <body>
     <script>
         function greet(name) {
+            let result = "";
+
             if (name === "Craig") {
-                console.log("Hi Craig!");
+               result = "Hi Craig!";
             } else if (name === "Tyler") {
-                console.log("Tyler, is that you?");
+                result = "Tyler, is that you?";
             } else {
-                console.log("Wait, where's Craig!");
+                result = "Wait, where's Craig!";
             }
+
+            return result;
         }
-        let name = "Zachary"
-        greet(name);
+
+        let message = greet("Tyler");
+        console.log(message);
     </script>
 </body>
 </html>
