@@ -7,11 +7,11 @@
 </head>
 <body>
     <script>
-        let numbers = [true, 200, "Hello"];
+        let days = ["Mon", "Tue", "Wed"];
 
-        for(let i = 0; i < numbers.length; i++) {
-            console.log(numbers[i]);
-        }
+        days.forEach(function(day, index){
+            console.log(`day: ${day}, index: ${index}`);
+        });
     </script>
 </body>
 </html>
