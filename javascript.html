@@ -6,11 +6,23 @@
     <title>JavaScript</title>
 </head>
 <body>
+    <!-- <button id="click-me">Click Me</button>
     <script>
-        let days = ["Mon", "Tue", "Wed"];
+        window.addEventListener("DOMContentLoaded", function(e){
+            console.log("The page is loaded.");
 
-        days.forEach(function(day, index){
-            console.log(`day: ${day}, index: ${index}`);
+            let btn = document.querySelector("#click-me");
+            btn.addEventListener("click", function(e){
+                console.log("The button was clicked.");
+            });
+        });
+    </script> -->
+    <script>
+        window.addEventListener("orientationchange", function(e){
+            let screen = window.screen;
+            let angle = screen.orientation.angle;
+            let type = screen.orientation.type;
+            console.log(`angle: ${angle}, type: ${type}`);
         });
     </script>
 </body>
